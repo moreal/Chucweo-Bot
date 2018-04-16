@@ -3,6 +3,11 @@ from secret import *
 from tweepy import API, OAuthHandler, TweepError
 from time import *
 
+import pip
+
+# If there is no tweepy, it will install the package auto
+pip.main(["install","tweepy"])
+
 print("[+] Prepare to start")
 
 auth = OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
